@@ -1,0 +1,41 @@
+<p>addenseignant works!</p>
+
+
+<form form [formGroup]="angForm" (ngSubmit)="postData(angForm)">
+
+<div class="form-row">
+    <label for="username">Name</label>
+    <input type="text" name="nom" formControlName="nom"  autocomplete="off" class="input-text" required="required" >
+</div>
+<div class="form-row">
+    <label for="fname">First Name</label>
+    <input type="text" name="prenom" formControlName="prenom" autocomplete="off" class="input-text" required="required">
+</div>
+<div class="form-row">
+    <label for="your_email">E-MAIL</label>
+    <input type="text" name="email" formControlName="email" autocomplete="off" class="input-text" required="required">
+</div>
+<div class="form-row">
+    <label for="password">bureau</label>
+    <input type="password" name="bureau" formControlName="bureau" autocomplete="off" class="input-text" id="telephone" required="required">
+</div>
+<div class="form-row">
+    <label for="ville">photo</label>
+    <input type="text" name="photo" formControlName="photo" autocomplete="off" class="input-text" required="required">
+</div>
+<div class="form-row">
+    <label for="cp">Lab</label>
+    <input type="number" name="lab" formControlName="lab" autocomplete="off" class="input-text" required="required">
+</div>
+<div class="form-row">
+    <label for="cp">liensearch</label>
+    <input type="number" name="liensearch" formControlName="liensearch" autocomplete="off" class="input-text" required="required">
+</div>
+<div class="form-row-last">
+    <input type="submit" name="register" class="register" value="Register">
+    <p>Or<a href="login">Sign in</a></p>
+</div>
+
+
+
+</form>

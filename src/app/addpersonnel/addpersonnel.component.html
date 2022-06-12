@@ -1,0 +1,11 @@
+<p>addpersonnel works!</p>
+<form form [formGroup]="angForm" (ngSubmit)="postdata(angForm)">
+<label>nom</label>
+<input type="text" formControlName="nom">
+<label>prenom</label>
+<input type="text" formControlName="prenom">
+<label>email</label>
+<input type="text" formControlName="email">
+<button type="submit">submit</button>
+
+</form>
